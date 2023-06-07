@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        
+  
+  <modelVersion>4.0.0</modelVersion>
+        
+  
+  <groupId>com.ckckgo</groupId>
+        
+  
+  <artifactId>bigdata</artifactId>
+        
+  
+  <packaging>pom</packaging>
+        
+  
+  <name>Bigdata</name>
+        
+  
+  <version>0.1</version>
+        
+  
+  <properties>
+                
+    
+    <java.version>11</java.version>
+                
+    
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+                
+    
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+                
+    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            
+  
+  </properties>
+        
+  
+  <dependencies>
+    </dependencies>
+        
+  
+  <modules>
+                
+    
+    <module>jedis-example</module>
+              
+    
+    <module>json2redis</module>
+          
+    
+    <module>redis2kafka</module>
+      
+  </modules>
+    
+
+</project>
