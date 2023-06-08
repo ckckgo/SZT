@@ -22,7 +22,11 @@ public class mClichouseSink extends RichSinkFunction<String> {
     public void invoke(String value, Context context) throws Exception {
         // TODO Auto-generated method stub
         // super.invoke(value, context);
-        stat.execute(String.format("INSERT INTO szt.szt_date VALUES (%s);", value));
+        if(value.length() < 100) {
+            return;
+        }
+        String sql = String.format("INSERT INTO szt.szt_data VALUES ('%s');", value);
+        stat.execute(sql);
         System.out.println(value);
     }
 
